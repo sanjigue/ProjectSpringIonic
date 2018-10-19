@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="navColor">
+    <ion-title>Read</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="backgroundColor">
+
+  <ion-list>
+    <ion-item>
+      <ion-input type="number" placeholder="Pizza's id" [(ngModel)]="idPizza" name="idPizza"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button full large color="secondary" (click)="getPizzaFromWeb()">
+      <ion-icon name="add-circle" class="iconSize" color="navColor"></ion-icon>
+    </button>
+  </div>
+
+  <ion-item class="backgroundColor">
+    <h2>{{pizza.name}} {{pizza.tipoMasa}}</h2>
+  </ion-item>
+
+</ion-content>
